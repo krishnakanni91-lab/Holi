@@ -1,0 +1,42 @@
+# Holi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi Celebration with Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page1" class="page active">
+        <div class="holi-bg">
+            <h1>Happy Holi!</h1>
+            <p>Let's celebrate colors together.</p>
+            <button id="startBtn" class="btn">Start Celebration</button>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <h2>Take a Selfie with Us!</h2>
+        <div class="camera-container">
+            <video id="video" autoplay playsinline></video>
+            <img src="couple.png" id="overlay-img" alt="Couple Overlay">
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="controls">
+            <button id="captureBtn" class="btn">Save Photo</button>
+            <button id="nextBtn" class="btn secondary">Next &rarr;</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="quote-box">
+            <p class="quote">"Colors are temporary, but the love we share is forever. Happy Holi, my love!"</p>
+            <button onclick="location.reload()" class="btn">Replay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
